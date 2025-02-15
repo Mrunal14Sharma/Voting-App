@@ -1,0 +1,16 @@
+package com.app.main.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Poll {
+	
+	private Long id;
+	private String quetion;
+	
+	private List<String> options = new ArrayList<>();
+	
+	
+	private List<Long> votes = new ArrayList<>();
+
+}

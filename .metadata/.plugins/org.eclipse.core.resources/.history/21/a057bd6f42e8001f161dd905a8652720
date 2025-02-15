@@ -1,0 +1,9 @@
+package com.app.main.repositary;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.app.main.model.Poll;
+
+public interface PollReopsitary extends JpaRepository<Poll, Long> {
+
+}

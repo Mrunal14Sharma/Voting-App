@@ -1,0 +1,23 @@
+package com.app.main.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Poll {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String quetion;
+	
+	private List<String> options = new ArrayList<>();
+	
+	
+	private List<Long> votes = new ArrayList<>();
+
+}

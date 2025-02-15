@@ -1,0 +1,29 @@
+package com.app.main.model;
+
+import jakarta.persistence.Embeddable;
+
+@Embeddable
+public class OptionVote {
+	private String voteOption;
+	private Long voteCount = 0L;
+	public OptionVote(String voteOption, Long voteCount) {
+		super();
+		this.voteOption = voteOption;
+		this.voteCount = voteCount;
+	}
+	public OptionVote() {
+		super();
+	}
+	public String getVoteOption() {
+		return voteOption;
+	}
+	public void setVoteOption(String voteOption) {
+		this.voteOption = voteOption;
+	}
+	public Long getVoteCount() {
+		return voteCount;
+	}
+	public void setVoteCount(Long voteCount) {
+		this.voteCount = voteCount;
+	}
+}

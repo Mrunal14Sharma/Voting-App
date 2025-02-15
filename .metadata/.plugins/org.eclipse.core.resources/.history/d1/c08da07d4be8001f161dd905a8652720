@@ -1,0 +1,33 @@
+package com.app.main.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.app.main.model.Poll;
+import com.app.main.repositary.PollReopsitary;
+
+@Service
+public class PollServices {
+	
+	private final PollReopsitary pollrepo;
+
+	public PollServices(PollReopsitary pollrepo) {
+		this.pollrepo = pollrepo;
+	}
+
+	public Poll createPoll(Poll poll) {
+		
+		return pollrepo.save(poll);
+	}
+
+	public List<Poll> getAllPolls() {
+		return pollrepo.findAll();
+	}
+
+	public Optional<Poll> getPollById(Long id) {
+		return pollrepo.findById(id);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.app.main.request;
+
+public class Vote {
+
+}

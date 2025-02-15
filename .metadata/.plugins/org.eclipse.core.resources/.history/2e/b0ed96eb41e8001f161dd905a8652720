@@ -1,0 +1,5 @@
+package com.app.main.repositary;
+
+public interface PollReopsitary {
+
+}

@@ -1,0 +1,6 @@
+package com.app.main.model;
+
+public class OptionVote {
+	private String option;
+	private Long voteCount = 0L;
+}

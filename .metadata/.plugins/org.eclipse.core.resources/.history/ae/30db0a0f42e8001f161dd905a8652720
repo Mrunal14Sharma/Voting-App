@@ -1,0 +1,15 @@
+package com.app.main.services;
+
+import org.springframework.stereotype.Service;
+
+import com.app.main.model.Poll;
+
+@Service
+public class PollServices {
+
+	public Poll createPoll(Poll poll) {
+		
+		return null;
+	}
+
+}
